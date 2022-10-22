@@ -1,0 +1,102 @@
+ {
+  "TargetList": [
+    {
+      "Name": "MainEntrance",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 80.86,
+        "y": -0.2111592,
+        "z": 3.9
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Name": "C408",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 73.3,
+        "y": -0.2111592,
+        "z": -7.6
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Name": "C406",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 66.9,
+        "y": -0.2111592,
+        "z": -7.6
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Name": "C405",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 60.1,
+        "y": -0.2111592,
+        "z": -7.5
+      },
+      "Rotation": {
+        "x": 0,
+        "y": -90,
+        "z": 0
+      }
+    },
+    {
+      "Name": "C404",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 53.4,
+        "y": -0.2111592,
+        "z": -7.6
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Name": "C403",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 46.8,
+        "y": -0.2111592,
+        "z": -7.7
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      }
+    },
+    {
+      "Name": "LastRoom",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 1.190002,
+        "y": -0.2111592,
+        "z": -1.99
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  ]
+}
