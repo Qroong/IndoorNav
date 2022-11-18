@@ -19,6 +19,10 @@ public class TargetHandler : MonoBehaviour {
 
     private List<TargetFacade> currentTargetItems = new List<TargetFacade>();
 
+    private Renderer rend;
+
+    private List<GameObject> targetlist = new List<GameObject>();
+
     private void Start() {
         GenerateTargetItems();
         FillDropdownWithTargetItems();
@@ -41,6 +45,9 @@ public class TargetHandler : MonoBehaviour {
         targetObject.name = $"{target.FloorNumber} - {target.Name}";
         targetObject.transform.localPosition = target.Position;
         targetObject.transform.localRotation = Quaternion.Euler(target.Rotation);
+        targetObject.SetActive(false);
+        targetlist.Add(targetObject);        
+
 
         TargetFacade targetData = targetObject.GetComponent<TargetFacade>();
         targetData.Name = target.Name;
@@ -59,15 +66,20 @@ public class TargetHandler : MonoBehaviour {
         targetDataDropdown.AddOptions(targetFacadeOptionData);
     }
 
-    public void SetSelectedTargetPositionWithDropdown(int selectedValue) {
-        navigationController.TargetPosition = GetCurrentlySelectedTarget(selectedValue);
+    public void SetSelectedTargetPositionWithDropdown(int selectedValue)
+    {
+        navigationController.NewPath(GetCurrentlySelectedTarget(selectedValue));
+        foreach (GameObject g in targetlist)
+        {
+            g.SetActive(false);
+        }
+        targetlist[selectedValue].SetActive(true);
     }
 
     private Vector3 GetCurrentlySelectedTarget(int selectedValue) {
         if (selectedValue >= currentTargetItems.Count) {
             return Vector3.zero;
         }
-
         return currentTargetItems[selectedValue].transform.position;
     }
 

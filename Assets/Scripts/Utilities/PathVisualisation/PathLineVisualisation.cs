@@ -19,6 +19,7 @@ public class PathLineVisualisation : MonoBehaviour {
         AddOffsetToPath();
         AddLineOffset();
         SetLineRendererPositions();
+        navigationController.TargetPosition = Vector3.zero;
     }
 
     private void AddOffsetToPath() {

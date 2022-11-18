@@ -11,9 +11,9 @@ public class NavigationController : MonoBehaviour {
         CalculatedPath = new NavMeshPath();
     }
 
-    private void Update() {
-        if (TargetPosition != Vector3.zero) {
-            NavMesh.CalculatePath(transform.position, TargetPosition, NavMesh.AllAreas, CalculatedPath);
+    public void NewPath(Vector3 target) {
+        if (target != Vector3.zero) {
+            NavMesh.CalculatePath(transform.position, target, NavMesh.AllAreas, CalculatedPath);
         }
     }
 }

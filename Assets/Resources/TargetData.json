@@ -5,8 +5,36 @@
       "FloorNumber": 0,
       "Position": {
         "x": 80.86,
-        "y": -0.2111592,
+        "y": 1,
         "z": 3.9
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Name": "Lab",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 20,
+        "y": 1,
+        "z": -8
+      },
+      "Rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "Name": "Elevator",
+      "FloorNumber": 0,
+      "Position": {
+        "x": 33,
+        "y": 1,
+        "z": -8
       },
       "Rotation": {
         "x": 0,
@@ -19,7 +47,7 @@
       "FloorNumber": 0,
       "Position": {
         "x": 73.3,
-        "y": -0.2111592,
+        "y": 1,
         "z": -7.6
       },
       "Rotation": {
@@ -33,7 +61,7 @@
       "FloorNumber": 0,
       "Position": {
         "x": 66.9,
-        "y": -0.2111592,
+        "y": 1,
         "z": -7.6
       },
       "Rotation": {
@@ -47,7 +75,7 @@
       "FloorNumber": 0,
       "Position": {
         "x": 60.1,
-        "y": -0.2111592,
+        "y": 1,
         "z": -7.5
       },
       "Rotation": {
@@ -61,7 +89,7 @@
       "FloorNumber": 0,
       "Position": {
         "x": 53.4,
-        "y": -0.2111592,
+        "y": 1,
         "z": -7.6
       },
       "Rotation": {
@@ -75,7 +103,7 @@
       "FloorNumber": 0,
       "Position": {
         "x": 46.8,
-        "y": -0.2111592,
+        "y": 1,
         "z": -7.7
       },
       "Rotation": {
@@ -89,7 +117,7 @@
       "FloorNumber": 0,
       "Position": {
         "x": 1.190002,
-        "y": -0.2111592,
+        "y": 1,
         "z": -1.99
       },
       "Rotation": {

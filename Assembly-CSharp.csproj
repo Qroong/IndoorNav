@@ -60,17 +60,23 @@
     <Compile Include="Assets\Scripts\Models\TargetWrapper.cs" />
     <Compile Include="Assets\Scripts\Utilities\PathVisualisation\PathArrowVisualisation.cs" />
     <Compile Include="Assets\Scripts\Utilities\PathVisualisation\SwitchPathVisualisation.cs" />
+    <Compile Include="Assets\Scripts\TGTEST.cs" />
     <Compile Include="Assets\Scripts\Utilities\GetImageAlternative.cs" />
+    <Compile Include="Assets\ExampleAssets\Scripts\ARFeatheredPlaneMeshVisualizer.cs" />
     <Compile Include="Assets\Scripts\Utilities\ToggleVisibility.cs" />
     <Compile Include="Assets\Scripts\Core\TargetHandler.cs" />
     <Compile Include="Assets\Scripts\Core\PinPointController.cs" />
     <Compile Include="Assets\Scripts\Utilities\Indicator_Rigid.cs" />
+    <Compile Include="Assets\Scripts\Pinpoint_Grab.cs" />
     <Compile Include="Assets\Scripts\Models\Target.cs" />
     <Compile Include="Assets\Scripts\Core\QrCodeRecenter.cs" />
     <Compile Include="Assets\Scripts\Utilities\SetUiText.cs" />
     <Compile Include="Assets\Scripts\Core\NavigationController.cs" />
+    <Compile Include="Assets\ExampleAssets\Scripts\AnchorCreator.cs" />
     <Compile Include="Assets\Scripts\Models\TargetFacade.cs" />
+    <Compile Include="Assets\Scripts\PinPointController.cs" />
     <Compile Include="Assets\Scripts\Utilities\KeepScreenAlive.cs" />
+    <Compile Include="Assets\Scripts\Serial.cs" />
     <Compile Include="Assets\Scripts\Utilities\NewBehaviourScript.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +95,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\ExampleAssets\Shaders\FeatheredPlaneShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
