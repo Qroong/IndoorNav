@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D45A7E39-B1FE-8C8A-BBE6-E06C0AE6043E}</ProjectGuid>
+    <ProjectGuid>{FFEB59AF-C1F2-6E1B-3A19-651033AF595D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>LeanTransition</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -56,58 +56,90 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Utilities\PathVisualisation\PathLineVisualisation.cs" />
-    <Compile Include="Assets\Scripts\Core\QrHandler.cs" />
-    <Compile Include="Assets\Scripts\Models\TargetWrapper.cs" />
-    <Compile Include="Assets\Scripts\Models\Qr.cs" />
-    <Compile Include="Assets\Scripts\Utilities\PathVisualisation\PathArrowVisualisation.cs" />
-    <Compile Include="Assets\Scripts\Utilities\PathVisualisation\SwitchPathVisualisation.cs" />
-    <Compile Include="Assets\Scripts\TGTEST.cs" />
-    <Compile Include="Assets\Scripts\Utilities\GetImageAlternative.cs" />
-    <Compile Include="Assets\ExampleAssets\Scripts\ARFeatheredPlaneMeshVisualizer.cs" />
-    <Compile Include="Assets\Scripts\Utilities\ToggleVisibility.cs" />
-    <Compile Include="Assets\Scripts\W3W_Webfind.cs" />
-    <Compile Include="Assets\Scripts\Core\TargetHandler.cs" />
-    <Compile Include="Assets\Scripts\Core\PinPointController.cs" />
-    <Compile Include="Assets\Scripts\Models\QrList.cs" />
-    <Compile Include="Assets\Scripts\Utilities\Indicator_Rigid.cs" />
-    <Compile Include="Assets\Scripts\Pinpoint_Grab.cs" />
-    <Compile Include="Assets\Scripts\Models\Target.cs" />
-    <Compile Include="Assets\Scripts\Models\QrWrapper.cs" />
-    <Compile Include="Assets\Scripts\Core\QrCodeRecenter.cs" />
-    <Compile Include="Assets\Scripts\Utilities\SetUiText.cs" />
-    <Compile Include="Assets\Scripts\Core\NavigationController.cs" />
-    <Compile Include="Assets\ExampleAssets\Scripts\AnchorCreator.cs" />
-    <Compile Include="Assets\Scripts\Models\TargetFacade.cs" />
-    <Compile Include="Assets\Scripts\PinPointController.cs" />
-    <Compile Include="Assets\Scripts\Utilities\KeepScreenAlive.cs" />
-    <Compile Include="Assets\Scripts\Serial.cs" />
-    <Compile Include="Assets\Scripts\Utilities\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Material\LeanMaterialFloat.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalPosition_x.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Scripts\LeanTiming.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformRotation.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformAnchorMax_x.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformOffsetMax_x.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Light\LeanLightIntensity.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Scripts\LeanState.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Scripts\LeanPlayer.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformOffsetMin_x.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformOffsetMin.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Scripts\LeanMethod.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Examples\Scripts\RepeatFromCode.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanTime.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformSizeDelta_x.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformPivot_y.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Graphic\LeanGraphicColor.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\AudioSource\LeanAudioSourcePitch.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformTranslate.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\AudioSource\LeanAudioSourcePanStereo.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalRotation.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformAnchoredPosition.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\CanvasGroup\LeanCanvasGroupInteractable.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalScale_x.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformPosition_x.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalPosition_z.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformSetAsLastSibling.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Scripts\LeanStateWithTarget.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\AudioSource\LeanAudioSourceSpatialBlend.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanJoinDelay.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalPosition_xy.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformAnchorMin_x.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Extras\Scripts\LeanAnimationRepeater.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformOffsetMax.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformAnchorMin_y.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Material\LeanMaterialVector.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformPosition_y.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformPosition_z.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Light\LeanLightColor.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformPivot_x.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Extras\Scripts\LeanManualAnimation.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformEulerAngles.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformSizeDelta.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformOffsetMin_y.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\AudioSource\LeanAudioSourceVolume.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalScale_y.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Scripts\LeanEase.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\GameObject\LeanGameObjectSetActive.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformSizeDelta_y.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\CanvasGroup\LeanCanvasGroupAlpha.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Scripts\LeanTransition.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalPosition.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Image\LeanImageFillAmount.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Material\LeanMaterialColor.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanGet.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformAnchorMin.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Light\LeanLightRange.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalPosition_y.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanTimeScale.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalEulerAngles.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformOffsetMax_y.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalScale.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformAnchoredPosition_x.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformAnchorMax_y.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\CanvasGroup\LeanCanvasGroupBlocksRaycasts.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanJoin.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanJoinInsert.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanQueue.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformPosition.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanEvent.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformAnchoredPosition_y.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformPivot.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanPlaySound.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\RectTransform\LeanRectTransformAnchorMax.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalScale_xy.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanInsert.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformRotate.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformPosition_xy.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\Transform\LeanTransformLocalScale_z.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\SpriteRenderer\LeanSpriteRendererColor.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTransition\Required\Methods\LeanDelay.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\UI\Menu.uxml" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\ExampleAssets\Shaders\FeatheredPlaneShader.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\Plugins\CW\LeanTransition\LeanTransition.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -347,6 +379,33 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.19f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.19f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.19f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.19f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="zxing.unity">
       <HintPath>Assets\Plugins\zxing.unity.dll</HintPath>
     </Reference>
@@ -358,6 +417,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.19f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -740,125 +802,22 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.19f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Management.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARCore.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.ARCore.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Subsystem.Registration">
-      <HintPath>Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARSubsystems.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.ARSubsystems.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Management">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARCore">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.ARCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARSubsystems">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARFoundation.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.ARFoundation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARFoundation">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.ARFoundation.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="LeanCommon.csproj">
+      <Project>{01B2CBA3-2187-0DED-2FC8-C08B0B1CAD5C}</Project>
+      <Name>LeanCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="CW.Common.csproj">
+      <Project>{E35C5B46-AB80-21AA-FDD3-9EAA646A4E20}</Project>
+      <Name>CW.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

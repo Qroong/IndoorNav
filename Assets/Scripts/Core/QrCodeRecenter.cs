@@ -13,7 +13,7 @@ public class QrCodeRecenter : MonoBehaviour {
     [SerializeField]
     private ARCameraManager cameraManager;
     [SerializeField]
-    private TargetHandler targetHandler;
+    private QrHandler qrHandler;
     [SerializeField]
     private GameObject qrCodeScanningPanel;
 
@@ -92,15 +92,15 @@ public class QrCodeRecenter : MonoBehaviour {
         }
     }
 
-    private void SetQrCodeRecenterTarget(string targetText) {
-        TargetFacade currentTarget = targetHandler.GetCurrentTargetByTargetText(targetText);
-        if (currentTarget != null) {
+    private void SetQrCodeRecenterTarget(string qrText) {
+        QrList currentQr = qrHandler.GetCurrentQrByQrText(qrText);
+        if (currentQr != null) {
             // Reset position and rotation of ARSession
             session.Reset();
 
             // Add offset for recentering
-            sessionOrigin.transform.position = currentTarget.transform.position;
-            sessionOrigin.transform.rotation = currentTarget.transform.rotation;
+            sessionOrigin.transform.position = currentQr.transform.position;
+            sessionOrigin.transform.rotation = currentQr.transform.rotation;
         }
     }
 
