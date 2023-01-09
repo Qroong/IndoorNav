@@ -24,10 +24,10 @@ public class PinPointController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-
-        navigationController.transform.position = other.transform.parent.position;
-        w3wText.text = other.gameObject.GetComponent<Text>().text;
-
- 
+        if (other.CompareTag("PinPointArea"))
+        {
+            navigationController.transform.position = other.transform.parent.position;
+            w3wText.text = other.gameObject.GetComponent<Text>().text;
+        }
     }
 }

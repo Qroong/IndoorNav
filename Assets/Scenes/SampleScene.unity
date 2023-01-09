@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19782,7 +19782,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527009378}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -19860,13 +19860,14 @@ PositionConstraint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527009378}
   m_Enabled: 1
+  serializedVersion: 2
   m_Weight: 1
   m_TranslationAtRest: {x: -60.36, y: 0, z: -12.389999}
   m_TranslationOffset: {x: 0, y: 0, z: 0}
   m_AffectTranslationX: 1
   m_AffectTranslationY: 1
   m_AffectTranslationZ: 1
-  m_IsContraintActive: 1
+  m_Active: 1
   m_IsLocked: 1
   m_Sources:
   - sourceTransform: {fileID: 332210230}
@@ -22454,8 +22455,7 @@ MonoBehaviour:
   navigationController: {fileID: 993672024}
   targetModelData: {fileID: 4900000, guid: 3b9efc35cfc99bd4c86ea54deeb40a16, type: 3}
   targetDataDropdown: {fileID: 1941963024}
-  targetObjectPrefab: {fileID: 7190962920384597485, guid: 17a8cdce50acdbe47923e1855d1a2721,
-    type: 3}
+  targetObjectPrefab: {fileID: 7190962920384597485, guid: 17a8cdce50acdbe47923e1855d1a2721, type: 3}
   targetObjectsParentTransforms:
   - {fileID: 0}
   - {fileID: 0}
@@ -23111,6 +23111,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!120 &589785302
 LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23204,10 +23205,13 @@ LineRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
+  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &589785303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24897,8 +24901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   qrModelData: {fileID: 4900000, guid: b6bf4c024e278694eb189f5ecefaa71b, type: 3}
-  qrObjectPrefab: {fileID: 5799175531758539381, guid: 5da9b71872316c347bc14c508c47e4b5,
-    type: 3}
+  qrObjectPrefab: {fileID: 5799175531758539381, guid: 5da9b71872316c347bc14c508c47e4b5, type: 3}
   qrObjectsParentTransform: {fileID: 614496832}
 --- !u!4 &614496832
 Transform:
@@ -34719,8 +34722,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: 61e05c6ae47dc5e4481b5d291789978b,
-    type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: 61e05c6ae47dc5e4481b5d291789978b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -56364,13 +56366,14 @@ RotationConstraint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473657226}
   m_Enabled: 1
+  serializedVersion: 2
   m_Weight: 1
   m_RotationAtRest: {x: 0, y: 180, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_AffectRotationX: 1
   m_AffectRotationY: 1
   m_AffectRotationZ: 1
-  m_IsContraintActive: 0
+  m_Active: 0
   m_IsLocked: 1
   m_Sources:
   - sourceTransform: {fileID: 332210230}
@@ -73516,6 +73519,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -76629,8 +76633,7 @@ MonoBehaviour:
   m_text: W3W Location
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 11a14ab8c18ae9d4984770f30a270ea6, type: 2}
-  m_sharedMaterial: {fileID: -863775447312140245, guid: 11a14ab8c18ae9d4984770f30a270ea6,
-    type: 2}
+  m_sharedMaterial: {fileID: -863775447312140245, guid: 11a14ab8c18ae9d4984770f30a270ea6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
